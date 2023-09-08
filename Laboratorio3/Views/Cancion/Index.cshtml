@@ -1,0 +1,39 @@
+﻿@model Laboratorio3.Models.CancionModel
+
+@{
+    ViewData["Title"] = "Canción Favorita";
+}
+
+<h1>@ViewBag.MainTitle</h1>
+
+<div>
+    <table class="table">
+        <tr>
+            <th>Nombre de la canción</th>
+            <td>@Model.Nombre</td>
+        </tr>
+
+        <tr>
+            <th>Nombre del autor</th>
+            <td>@Model.Autor</td>
+        </tr>
+
+        <tr>
+            <th>Álbum de la cancion</th>
+            <td>@Model.Album</td>
+        </tr>
+
+        <tr>
+            <th>Fecha de lanzamiento</th>
+            <td>@Model.Fecha</td>
+        </tr>
+
+        <tr>
+            <th>Genero de la cancion</th>
+            <td>@Model.Genero</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <button>I am a button</button>
+</div>
